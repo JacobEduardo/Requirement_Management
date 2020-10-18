@@ -1,0 +1,10 @@
+﻿@model List<Requerimientos.Models.History>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>History</h1>
+@foreach (var history in Model)
+{
+    @history.IdHistory.ToString();
+    <br />
+}

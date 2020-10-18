@@ -1,0 +1,14 @@
+﻿@model List<Requerimientos.Models.History>
+@{
+
+
+}
+
+@foreach (var history in Model)
+{
+    @history.IdHistory<br />
+    @history.IdEvent<br />
+    @history.EventMessage<br />
+    @history.IdRequest<br />
+    @history.IdTecnicoArl<br />
+}
