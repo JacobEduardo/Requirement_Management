@@ -12,5 +12,11 @@ namespace Requerimientos.Models
         public string EventMessage { get; set; }
         public int IdRequest { get; set; }
         public int IdTecnicoArl { get; set; }
+        public string eventname { get; set; }
+        public string requerimiento_titulo { get; set; }
+        public string requerimiento_body { get; set; }
+        public string requerimiento_forter { get; set; }
+        public string tecnicoARL { get; set; }
+
     }
 }

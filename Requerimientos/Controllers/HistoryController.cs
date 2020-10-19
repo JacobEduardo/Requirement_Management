@@ -20,7 +20,12 @@ namespace Requerimientos.Controllers
                            IdEvent = d.IdEvent,
                            EventMessage = d.EventMessage,
                            IdRequest = d.IdRequest,
-                           IdTecnicoArl = d.IdTecnicoArl
+                           IdTecnicoArl = d.IdTecnicoArl,
+                           eventname = d.IdEventNavigation.Name,
+                           requerimiento_titulo = d.IdRequestNavigation.Title,
+                           requerimiento_body = d.IdRequestNavigation.Body,
+                           requerimiento_forter = d.IdRequestNavigation.Foster,
+                           tecnicoARL = d.IdTecnicoArlNavigation.Nombre + d.IdTecnicoArlNavigation.Apellido
                        }).ToList();
             }
             return View(lst);
